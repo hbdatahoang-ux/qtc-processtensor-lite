@@ -1,0 +1,9 @@
+{
+    "audit": {
+        "M2_5_ALL_PASSED": false,
+        "logs": [
+            "CRITICAL CRASH: universal_bm_runner() got multiple values for argument 'seed'"
+        ]
+    },
+    "surface_shape": "(1, 5)"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "A4_0001",
+    "timestamp": "2026-06-16T15:15:00",
+    "model": "BM2",
+    "score": 0.41,
+    "threshold": 0.17,
+    "z_score": 4.2,
+    "passed_m25": true,
+    "params": {
+      "dt": 0.05,
+      "seed": 42,
+      "memory_strength": 0.5
+    },
+    "persistent": true
+  }
+]
