@@ -168,7 +168,7 @@ def run_retention_study(
             div_proj
         )
 
-        audit = proj.audit
+        audit = proj.simulation.audit
 
         row = {
             "memory": mem,
