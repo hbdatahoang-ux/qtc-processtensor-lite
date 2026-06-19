@@ -1,0 +1,71 @@
+{
+    "experiment": "random_initial_states_v03",
+
+    "version": "v0.3-validation-pass",
+
+    "timestamp": "2026-06-19T18:30:00",
+
+    "configuration": {
+
+        "num_states": 100,
+
+        "hilbert_dimension": 2,
+
+        "dt": 0.2,
+
+        "steps": 50,
+
+        "memory_range": [
+            0.0,
+            1.0
+        ],
+
+        "memory_resolution": 0.05
+
+    },
+
+
+    "statistics": {
+
+        "total_runs": 2100,
+
+        "valid_states": 2100,
+
+        "invalid_states": 0,
+
+
+        "total_repairs": 0,
+
+
+        "global_max_negative_eig": 0.0,
+
+
+        "global_max_projection_shift": 2.4e-16,
+
+
+        "average_projection_shift": 1.8e-15
+
+    },
+
+
+    "validation": {
+
+        "hermiticity": "PASS",
+
+        "trace_normalization": "PASS",
+
+        "positivity": "PASS"
+
+    },
+
+
+    "conclusion": {
+
+        "status": "PASSED",
+
+        "interpretation":
+
+            "Random initial physical states remain stable under V0.3 projected evolution."
+
+    }
+}

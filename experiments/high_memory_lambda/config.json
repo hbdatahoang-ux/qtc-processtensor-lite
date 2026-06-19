@@ -1,0 +1,79 @@
+{
+    "experiment": "high_memory_lambda_v03",
+
+    "version": "v0.3-validation-pass",
+
+    "description": "Stress test of non-Markov memory strength beyond standard validation range.",
+
+
+    "simulation": {
+
+        "dt": 0.2,
+
+        "steps": 50,
+
+        "seed": 42,
+
+        "initial_state": "|0><0|"
+
+    },
+
+
+    "memory_sweep": {
+
+        "parameter": "lambda",
+
+        "values": [
+
+            1.0,
+            1.25,
+            1.5,
+            1.75,
+            2.0,
+            2.5,
+            3.0,
+            5.0,
+            10.0
+
+        ]
+
+    },
+
+
+    "metrics": [
+
+        "repair_count",
+
+        "max_negative_eig",
+
+        "avg_negative_eig",
+
+        "max_projection_shift",
+
+        "avg_projection_shift",
+
+        "physical_valid"
+
+    ],
+
+
+    "output": {
+
+        "directory": "results",
+
+        "summary_file": "high_memory_summary.json"
+
+    },
+
+
+    "scientific_goal": [
+
+        "Identify memory instability boundary",
+
+        "Measure PSD projection activation",
+
+        "Test physical robustness under strong memory coupling"
+
+    ]
+
+}

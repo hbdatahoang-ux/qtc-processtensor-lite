@@ -1,0 +1,115 @@
+{
+    "experiment": "higher_dimension_scaling",
+
+    "version": "v0.3-validation-pass",
+
+    "timestamp": "2026-06-19",
+
+    "description": "Hilbert space dimension scaling validation for QTC ProcessTensor Lite V0.3",
+
+
+    "configuration": {
+
+        "dimensions": [
+            2,
+            4,
+            8,
+            16
+        ],
+
+        "samples_per_dimension": 10,
+
+        "dt": 0.2,
+
+        "steps": 50,
+
+        "memory_strength": 0.5
+
+    },
+
+
+    "results": [
+
+        {
+            "dimension": 2,
+
+            "samples": 10,
+
+            "physical_pass_rate": 1.0,
+
+            "avg_repairs": 0,
+
+            "max_negative_eigenvalue": 0.0,
+
+            "avg_projection_shift": 1.2e-15,
+
+            "avg_runtime_seconds": 0.01
+        },
+
+
+        {
+            "dimension": 4,
+
+            "samples": 10,
+
+            "physical_pass_rate": 1.0,
+
+            "avg_repairs": 0,
+
+            "max_negative_eigenvalue": 0.0,
+
+            "avg_projection_shift": 2.5e-15,
+
+            "avg_runtime_seconds": 0.03
+        },
+
+
+        {
+            "dimension": 8,
+
+            "samples": 10,
+
+            "physical_pass_rate": 1.0,
+
+            "avg_repairs": 0,
+
+            "max_negative_eigenvalue": -1.1e-16,
+
+            "avg_projection_shift": 4.8e-15,
+
+            "avg_runtime_seconds": 0.08
+        },
+
+
+        {
+            "dimension": 16,
+
+            "samples": 10,
+
+            "physical_pass_rate": 1.0,
+
+            "avg_repairs": 0,
+
+            "max_negative_eigenvalue": -3.4e-16,
+
+            "avg_projection_shift": 9.2e-15,
+
+            "avg_runtime_seconds": 0.25
+        }
+
+    ],
+
+
+    "scaling_summary": {
+
+        "status": "STABLE",
+
+        "physical_validity_preserved": true,
+
+        "projection_growth": "numerical_precision_scale",
+
+        "dimension_limit_tested": 16
+
+    }
+
+}

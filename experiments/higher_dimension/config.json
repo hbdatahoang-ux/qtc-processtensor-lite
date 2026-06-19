@@ -1,0 +1,62 @@
+{
+    "experiment": "higher_dimension_validation",
+
+    "version": "v0.3-validation-pass",
+
+    "description": "Higher dimensional Hilbert space stability test for QTC ProcessTensor Lite V0.3",
+
+    "dimensions": [
+        2,
+        4,
+        8,
+        16
+    ],
+
+    "samples_per_dimension": 10,
+
+    "simulation": {
+
+        "dt": 0.2,
+
+        "steps": 50,
+
+        "memory_strength": 0.5
+
+    },
+
+    "random_state": {
+
+        "seed": 42,
+
+        "generation": "Ginibre_random_density_matrix"
+
+    },
+
+    "unitary": {
+
+        "generation": "random_QR_unitary"
+
+    },
+
+    "validation_metrics": [
+
+        "physical_state_validity",
+
+        "repair_count",
+
+        "max_negative_eigenvalue",
+
+        "max_projection_shift",
+
+        "runtime"
+
+    ],
+
+    "output": {
+
+        "json": "results/dimension_sweep.json",
+
+        "report": "results/dimension_report.md"
+
+    }
+}
