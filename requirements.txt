@@ -1,4 +1,12 @@
-numpy>=2.0.0
-scipy>=1.14.0
-matplotlib>=3.10.0
-pyyaml>=6.0.0
+# ============================================================
+
+# QTC ProcessTensor Lite
+
+# Reproducible Environment
+
+# ============================================================
+
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.0
+PyYAML==6.0.2
